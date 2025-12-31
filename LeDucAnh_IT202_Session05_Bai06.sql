@@ -1,0 +1,11 @@
+CREATE DATABASE LeDucAnh_IT202_Session05;
+USE LeDucAnh_IT202_Session05;
+
+/*Trang 1*/
+SELECT * FROM Product 
+WHERE status = 'active' AND Price BETWEEN 1000000 AND 3000000 
+ORDER BY Price ASC LIMIT 10 OFFSET 0;
+/*Trang 2*/
+SELECT * FROM Product 
+WHERE status = 'active' AND Price BETWEEN 1000000 AND 3000000 
+ORDER BY Price ASC LIMIT 10 OFFSET 10;
